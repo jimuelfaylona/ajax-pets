@@ -35,10 +35,95 @@
                 //alert(eats);
 
                 if (feels == "fluffy" && likes == "petted" && eats == "carrots") {
-                    pet = "rabbit";
+                    pet = "Rabbit";
+                    <img src="images/rabbit.jpg" />
+                }
+                if (feels == "fluffy" && likes == "petted" && eats == "pets") {
+                    pet = "Polar Bear";
+                }
+                if (feels == "fluffy" && likes == "petted" && eats == "fish") {
+                    pet = "Siberian Cat";
+                }
+                if (feels == "fluffy" && likes == "ridden" && eats == "carrots") {
+                    pet = "Llama";
+                }
+                if (feels == "fluffy" && likes == "ridden" && eats == "pets") {
+                    pet = "Winnie The Pooh";
+                }
+                if (feels == "fluffy" && likes == "ridden" && eats == "fish") {
+                    pet = "Madara Cat";
+                }
+                if (feels == "fluffy" && likes == "cuddly" && eats == "carrots") {
+                    pet = "Dwarf Lop Blue Rabbit";
+                }
+                if (feels == "fluffy" && likes == "cuddly" && eats == "pets") {
+                    pet = "Tiger";
+                }
+                if (feels == "fluffy" && likes == "cuddly" && eats == "fish") {
+                    pet = "Himalayan Cat";
+                }
+
+
+
+                if (feels == "scaly" && likes == "petted" && eats == "carrots") {
+                    pet = "Vegan T Rex";
+                }
+                if (feels == "scaly" && likes == "petted" && eats == "pets") {
+                    pet = "Komodo Dragon";
+                }
+                if (feels == "scaly" && likes == "petted" && eats == "fish") {
+                    pet = "Crocodile";
+                }
+                if (feels == "scaly" && likes == "ridden" && eats == "carrots") {
+                    pet = "Dragon";
                 }
                 if (feels == "scaly" && likes == "ridden" && eats == "pets") {
-                    pet = "velociraptor";
+                    pet = "Quetzalcoatl";
+                }
+                if (feels == "scaly" && likes == "ridden" && eats == "fish") {
+                    pet = "Pescetarian Velociraptor";
+                }
+                if (feels == "scaly" && likes == "cuddly" && eats == "carrots") {
+                    pet = "Tortoise";
+                }
+                if (feels == "scaly" && likes == "cuddly" && eats == "pets") {
+                    pet = "Alligators";
+                }
+                if (feels == "scaly" && likes == "cuddly" && eats == "fish") {
+                    pet = "Turtle";
+                }
+
+
+
+
+
+
+                if (feels == "smooth" && likes == "petted" && eats == "carrots") {
+                    pet = "Vegan Tiger";
+                }
+                if (feels == "smooth" && likes == "petted" && eats == "pets") {
+                    pet = "Wolf";
+                }
+                if (feels == "smooth" && likes == "petted" && eats == "fish") {
+                    pet = "Pescetarian Tiger";
+                }
+                if (feels == "smooth" && likes == "ridden" && eats == "carrots") {
+                    pet = "Gorilla";
+                }
+                if (feels == "smooth" && likes == "ridden" && eats == "pets") {
+                    pet = "Lion";
+                }
+                if (feels == "smooth" && likes == "ridden" && eats == "fish") {
+                    pet = "Brown Bear";
+                }
+                if (feels == "smooth" && likes == "cuddly" && eats == "carrots") {
+                    pet = "Featherless Penguin";
+                }
+                if (feels == "smooth" && likes == "cuddly" && eats == "pets") {
+                    pet = "Leopard";
+                }
+                if (feels == "smooth" && likes == "cuddly" && eats == "fish") {
+                    pet = "Sphinx Cat";
                 }
 
                 let output = " ";
@@ -70,22 +155,26 @@
             <p>Please choose how you would like your pet to feel:</p>
             <input type="radio" name="feels" value="fluffy" require="required">fluffy <br />
             <input type="radio" name="feels" value="scaly">scaly <br />
+            <input type="radio" name="feels" value="smooth">smooth <br />
         </div>
         <div id="pet_likes">
             <h3>Likes</h3>
             <p>Please tell us what your pet will like:</p>
             <input type="radio" name="likes" value="petted" require="required">to be petted <br />
             <input type="radio" name="likes" value="ridden">to be ridden <br />
+            <input type="radio" name="likes" value="cuddly">cuddly <br />
         </div>
         <div id="pet_eats">
             <h3>Eats</h3>
             <p>Please tell us what your pet likes to eat:</p>
             <input type="radio" name="eats" value="carrots" require="required">carrots <br />
             <input type="radio" name="eats" value="pets">other people's pets <br />
+            <input type="radio" name="eats" value="fish">fish <br />
         </div>
 
         <input type="submit" value="submit it!" />
-        <div id="pet">Pick of pet goes here</div>
+        <div id="pet"></div>
+        <div id="pics"></div>
         <div id="output">Output goes here!</div>
     </form>
 </body>
