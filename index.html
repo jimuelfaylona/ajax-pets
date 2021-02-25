@@ -32,6 +32,7 @@
                 let likes = $("input[name=likes]:checked").val();
                 let eats = $("input[name=eats]:checked").val();
                 let pet = ""; //will store our pet
+                let pic = "";
                 //alert(eats);
 
                 if (feels == "fluffy" && likes == "petted" && eats == "carrots") {
@@ -127,7 +128,7 @@
                 }
 
 
-                let output = " ";
+                let output = "";
 
                 //output += "<p>Your pet feels: </p>";
                 //creat text to tell user about pet!
@@ -138,6 +139,7 @@
                 $("#output").html(output);
                 //load pic of pet
                 $('#pet').load(`includes/content.html #${pet}`);
+                
                 //$('#pet').load('includes/content.html #cute-kitten');
 
                 e.preventDefault();//no need to submit as you'll be doing AJAX on this page
